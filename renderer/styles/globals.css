@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gray-200 font-['Arial'];
+  }
+
+  table {
+    @apply border-solid border-2 border-[#333]  border-collapse w-full
+  }
+
+  td, th {
+    @apply text-left px-2 py-2
+  }
+
+  tbody tr {
+    @apply odd:bg-white even:bg-slate-200 hover:bg-blue-100
+  }
+
+  thead {
+    @apply bg-[#333] text-white
+  }
+}
+
+/*@layer components {
+  .btn-blue {
+    @apply text-white font-bold px-4 py-2 rounded bg-blue-600 hover:bg-blue-500;
+  }
+}*/
+
+
