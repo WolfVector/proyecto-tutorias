@@ -35,7 +35,7 @@ $ npm run dev
 $ npm run build:win64
 
 # Para 32-bits
-$ npm run build:win64
+$ npm run build:win32
 
 # Para Linux
 $ npm run build:linux
