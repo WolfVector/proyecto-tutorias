@@ -8,7 +8,7 @@ Este será el respositorio para el proyecto. Aquí encontraras la <a href="doc">
 
 - El primer paso es descargar <a href="https://nodejs.org/es/" target="_blank">Node js</a>.
 - Clona el respositorio o descarga el archivo que envié al grupo
-- Accede con la terminal a la carpeta donde hayas descomprimido el archivo
+- Accede con la terminal a la carpeta descomprimida
 - Ejectuta el siguiente comando
 
 ```
