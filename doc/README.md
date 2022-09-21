@@ -11,7 +11,7 @@ De esta forma es más simple para el usuario y no será necesario un admin.
 - `/renderer/pages`: es el directorio donde van las páginas
 - `/renderer/components`: directorio donde reside código html reusable
 - `/main/background.js`: archivo js que se encarga de inicar la aplicación y recibir peticiones del cliente
-- `/main/helpers`: directorio donde reside los archivos que se encargan de la conexión a la base de datos, la definición de las tablas, y  validaciones
+- `/main/helpers`: directorio donde residen los archivos que se encargan de la conexión a la base de datos, la definición de las tablas, y  validaciones
 - `/dist`: directorio que se genera al compilar el programa. Ahí residirá el ejecutable.
 
 ### Base de datos
@@ -20,7 +20,7 @@ En el ambiente de prueba la base de datos reside en `/db`. En producción la bas
 #### Definición de la base de datos
 Las definicines de las llaves foraneas las puedes encontrar en `/main/helpers/migrations.js` en la función `dbMigrations`.
 
-```
+```javascript
 const migrate = {
     Tutor: {
         id: {
