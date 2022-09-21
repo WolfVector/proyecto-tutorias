@@ -29,6 +29,8 @@ En el directorio `/renderer/components` se encuentran funciones y código html q
 - **PrevNext.jsx**: archivo que define el código html de los botones 'Atrás' y 'Siguiente'
 
 ### Base de datos
+Utilicé la libreria <a href="https://sequelize.org/docs/v6/getting-started/">Sequelize</a> para trabajar rápido con la base de datos. Es un ORM, si han trabajado con Laravel entonces no creo que se les complique mucho.
+
 En el ambiente de prueba la base de datos reside en `/db`. En producción la base de datos reside en el directorio del ejecutable que se generó `/dist/win-unpacked/resources/tutorias.db`. Sólo se compartirá `/win-unpacked` con el usuario final.
 
 #### Definición de la base de datos
