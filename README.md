@@ -18,7 +18,7 @@ Esto instalará las dependencias.
 
 ### Base de datos
 
-Para que la base de datos funcione en el ambiente de prueba es necesario crear la carpeta 'db'. Sólo la carpeta y nada más.
+Para que la base de datos funcione en el ambiente de prueba es necesario crear la carpeta `db`. Sólo la carpeta y nada más.
 
 En el ambiente de producción la base de datos se crea sola, no es necesario hacer nada.
 
@@ -40,4 +40,4 @@ $ npm run build:win32
 # Para Linux
 $ npm run build:linux
 ```
-Esto creará una carpeta llamada 'dist', dentro de ella se encontrará un instalador y una carpeta que contiene la aplicación en formato portable. Recomiendo ejecutar el portable
+Esto creará una carpeta llamada `dist`, dentro de ella se encontrará un instalador y una carpeta que contiene la aplicación en formato portable. Recomiendo ejecutar el portable
