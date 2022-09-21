@@ -2,7 +2,7 @@
 
 ## Proyecto Tutorías
 
-Este será el respositorio para el proyecto. Aquí encontraras la documentación y los pasos para la instalación.
+Este será el respositorio para el proyecto. Aquí encontraras la <a href="doc">documentación</a> y los pasos para la instalación.
 
 ### Instalación de dependencias
 
