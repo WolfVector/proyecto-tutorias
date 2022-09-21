@@ -14,6 +14,20 @@ De esta forma es más simple para el usuario y no será necesario un admin.
 - `/main/helpers`: directorio donde residen los archivos que se encargan de la conexión a la base de datos, la definición de las tablas, y  validaciones
 - `/dist`: directorio que se genera al compilar el programa. Ahí residirá el ejecutable.
 
+### Funciones y componentes que te pueden ser util
+
+En el directorio `/renderer/components` se encuentran funciones y código html que te pueden ser util a la hora de agilizar la creación de alguna página. Dentro de la carpeta están los componentes:
+- Alert.jsx: contiene funciones para mostrar mensajes de alerta.
+- Nav.jsx: contiene el código html del nav superior que se observa en todas las páginas
+- Loading.jsx: código html para mostrar una animación de "cargando"
+- Alumno.jsx: este archivo contendrá el código para el formulario de los datos del alumno
+- SemestreAnterior.jsx: este archivo contendrá la primera parte del formulario de tutorías
+- Propositos.jsx: este archivo contendrá la segunda parte del formulario de tutorías
+- Compromisos.jsx: este archivo contendrá la tercera parte del formulario de tutorías
+- Expectativas.jsx: este archivo contendrá la cuarta parte del formulario de tutorías
+- NavStep.jsx: archivo que contiene el código html del nav que se muestra en el formulario
+- PrevNext.jsx: archivo que define el código html de los botones 'Atrás' y 'Siguiente'
+
 ### Base de datos
 En el ambiente de prueba la base de datos reside en `/db`. En producción la base de datos reside en el directorio del ejecutable que se generó `/dist/win-unpacked/resources/tutorias.db`. Sólo se compartirá `/win-unpacked` con el usuario final.
 

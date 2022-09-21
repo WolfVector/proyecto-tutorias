@@ -1,5 +1,11 @@
 import Swal from 'sweetalert2'
 
+/**
+ * 
+ * @param {string} title - El mensaje que se mostrará
+ * @param {string} icon - El tipo de ícono ("error" o "success", para más íconos checa la documentación de sweetalert2)
+ * @param {number} timer - El tiempo que durará el mensaje (opcional, el default es 2000)
+ */
 function alertTimerMessage(title, icon, timer = 2000) {
     const Toast = Swal.mixin({
         toast: true,
@@ -15,6 +21,12 @@ function alertTimerMessage(title, icon, timer = 2000) {
     })
 }
 
+/**
+ * 
+ * @param {string} messages - Un array de mensajes a mostrar
+ * @param {string} icon - El tipo de ícono ("error" o "success", para más íconos checa la documentación de sweetalert2)
+ * @param {number} width - El ancho del elemento (opcional)
+ */
 function alertMessage(messages, icon, width = 500) {
     let html = "<ul>"
     messages.forEach(msg => {
@@ -32,6 +44,11 @@ function alertMessage(messages, icon, width = 500) {
     })
 }
 
+/**
+ * 
+ * @param {string} text - El texto a mostrar
+ * @returns {Swal}
+ */
 function alertConfirm(text) {
     return (Swal.mixin({
         title: '¿Estás seguro?',
