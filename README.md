@@ -28,6 +28,8 @@ En el ambiente de producción la base de datos se crea sola, no es necesario hac
 $ npm run dev
 ```
 
+Esperar a que cargue por completo (puede demorar unos momentos la primera vez).
+
 ### Compilar la app (producción)
 
 ```
