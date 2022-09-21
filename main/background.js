@@ -45,29 +45,37 @@ app.on('window-all-closed', async () => {
   app.quit();
 });
 
-ipcMain.on("api-sv-start-app", async (event, req) => {
-  const Tutor = sequelize.models.Tutor
-  const data = await Tutor.findAll()
+/*
+En esta sección estarán las funciones que manejan las peticiones del cliente
+*/
 
+ipcMain.on("api-sv-start-app", async (event, req) => {
+  const Tutor = sequelize.models.Tutor //Accede al modelo del tutor
+  const data = await Tutor.findAll() //Busca un tutor
+
+  /* Responde al cliente */
   event.sender.send("api-cl-start-app", (data.length > 0) ? true : false)
 })
 
 ipcMain.on("api-sv-new-tutor", async (event, req) => {
   const res = {ok: true}
-  const err = validateNewTutor(req)
-  
-  if(err.length > 0) {
+  const err = validateNewTutor(req) //Valida los campos
+
+  if(err.length > 0) { //Si errores, entonces...
     res.ok = false
     res.err = err
   }
-  else {
-    const Tutor = sequelize.models.Tutor
-    await Tutor.create({ nombre: req.name, email: req.email })
+  else { //En caso contrario guarda el nuevo tutor
+    const Tutor = sequelize.models.Tutor //Accede al modelo del tutor
+    await Tutor.create({ nombre: req.name, email: req.email }) //Crea un nuevo tutor y guardalo
   }
 
+  /* Responde al cliente */
   event.sender.send("api-cl-register-res", res)
 })
 
 ipcMain.on("api-sv-remove-alumno", async (event, res) => {
+
+  /* Responde al cliente */
   event.sender.send("api-cl-remove-confirm")
 })

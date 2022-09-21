@@ -7,6 +7,7 @@ let DB_PATH;
 const DB_NAME = "tutorias.db"
 let sequelize;
 
+/* Inicializa lo necesario para conectarte a la base de datos */
 async function dbInit(deploy_path) {
     dbMakeDirectory(deploy_path) //Si el archivo no existe, entonces crealo
     await dbConnect() //Conecta a la base de datos
@@ -22,6 +23,7 @@ function dbMakeDirectory(deploy_path = null) {
         fs.closeSync(fs.openSync(DB_PATH, 'w'));
 }
 
+/* Conecta a la base de datos */
 async function dbConnect() {    
     sequelize = new Sequelize({
         dialect: "sqlite",
