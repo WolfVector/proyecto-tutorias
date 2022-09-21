@@ -9,7 +9,7 @@ De esta forma es más simple para el usuario y no será necesario un admin.
 ### Estructura del proyecto
 
 - `/renderer/pages`: es el directorio donde van las páginas
-- `/renderer/components`: directorio donde residen código html reusable
+- `/renderer/components`: directorio donde reside código html reusable
 - `/main/background.js`: archivo js que se encarga de inicar la aplicación y recibir peticiones del cliente
 - `/main/helpers`: directorio donde reside los archivos que se encargan de la conexión a la base de datos, la definición de las tablas, y  validaciones
 - `/dist`: directorio que se genera al compilar el programa. Ahí residirá el ejecutable.
