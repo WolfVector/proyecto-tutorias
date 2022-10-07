@@ -28,6 +28,11 @@ En el directorio `/renderer/components` se encuentran funciones y código html q
 - **NavStep.jsx**: archivo que contiene el código html del nav que se muestra en el formulario
 - **PrevNext.jsx**: archivo que define el código html de los botones 'Atrás' y 'Siguiente'
 
+### Debug (como abrir la consola para imprimir datos)
+Algo que debe quedar claro es que en este tipo de aplicaciones existen dos tipos de consolas: la del server y la del cliente. La del server son las dos pantallas negras que se muestran al inicio. Para mostrar algo en dichas pantallas debes poner `console.log("tu mensaje o también puede ser una variable")` en algunos de los archivos que se encuentran en la carpeta `main`.
+
+Ahora, para mostrar mensajes en el cliente es similar, pero la funcion la debes de llamar en los archivos que se encuentran en la carpeta `renderer`. Dicha carpeta almacena el código cliente. Para ver estos mensajes debes presionar `Shift + Ctrl + I` o `F12`. Esto abrirá una consola parecida a la del navegador web Chrome. Ahí podras visualizar todo los mensajes que utilices para debuguear.
+
 ### Base de datos
 Utilicé la libreria <a href="https://sequelize.org/docs/v6/getting-started/">Sequelize</a> para trabajar rápido con la base de datos. Es un ORM, si han trabajado con Laravel entonces no creo que se les complique mucho.
 
